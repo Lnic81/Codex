@@ -1,0 +1,532 @@
+@import "_Variabili";
+
+body {
+    margin: 0;
+    background: rgb(97, 97, 97);
+    background: linear-gradient(180deg, rgba(97, 97, 97, 1) 0%, rgba(119, 118, 118, 1) 13%, rgba(152, 152, 152, 1) 26%, rgba(119, 118, 118, 1) 39%, rgba(97, 97, 97, 1) 52%, rgba(119, 118, 118, 1) 65%, rgba(152, 152, 152, 1) 78%, rgba(119, 118, 118, 1) 91%, rgba(97, 97, 97, 1) 100%);
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+//topnav
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+
+}
+
+
+.topnav #myLinks {
+    display: none;
+}
+
+#myLinks li {
+    list-style: none;
+}
+
+.topnav a {
+    color: gold;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.active {
+    background-color: #333;
+    color: white;
+}
+
+
+//presentazione
+.Presentazione {
+    color: $coloreTitolo;
+    display: flex;
+    padding: 150px;
+    height: 500px;
+    padding-top: 250px;
+    margin-bottom: 0;
+}
+
+.pTesto {
+    text-align: left;
+    justify-content: center;
+    padding-left: 30px;
+
+    h3,
+    h1,
+    p {
+        text-align: right;
+        padding-right: 10px;
+    }
+
+    h3 {
+        font-size: 25px;
+        color: $coloreSottotitolo;
+    }
+
+    h1 {
+        color: $coloreTitolo;
+    }
+
+    p {
+        color: $coloreParagarafo;
+    }
+}
+
+
+#fotopersonale {
+    border-radius: 50%;
+    width: 350px;
+    box-shadow: 5px 5px 5px 5px #ccc, -5px -5px 5px 5px #ccc;
+
+    margin-bottom: 5px;
+}
+
+
+//status (animazione dei numeri)
+.Percorso {
+    //display: flex;
+    height: 500px;
+    margin-bottom: 20%;
+
+    h2,
+    p {
+        text-align: center;
+        padding: 40px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+}
+
+.bobba {
+    display: flex;
+    justify-content: center;
+}
+
+.insieme {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 30px 50px;
+}
+
+.counter {
+    font-size: 60px;
+}
+
+//porfolio
+.Portfolio {
+    
+    text-align: center;
+    padding: 40px;
+    margin-top: 10%;
+
+    h2 {
+        text-align: center;
+    }
+}
+
+.Developer {
+    padding-top: 10%;
+    display: flex;
+    flex-direction: row;
+    
+    video {
+        padding-left: 20%;
+        padding-right: 20%;
+        width: 20%;
+
+    }
+}
+
+.Design {
+    padding-top: 10%;
+    display: flex;
+    flex-direction: row-reverse;
+
+    video {
+        padding-left: 20%;
+        padding-right: 20%;
+        width: 20%;
+
+    }
+}
+
+//offresi
+.offresigenerale {
+    margin-top: 5%;
+    height: 600px;
+
+    h2 {
+        padding-top: 15%;
+        text-align: center;
+        padding-bottom: 5%;
+    }
+
+    .offresi ul {
+        padding-top: 5%;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 10%;
+        padding-left: 10%;
+        text-align: center;
+    }
+
+
+}
+
+//contatti
+.contatti,
+.contatti2 {
+    display: inline;
+    position: relative;
+    text-align: center;
+
+    h2 {
+        margin-top: 10%;
+    }
+}
+
+
+
+label {
+    margin-top: 10%;
+    display: inline;
+    padding-left: 3%;
+}
+
+
+input,
+textarea {
+    margin-top: 10%;
+    border: solid 1.5px #9e9e9e;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+textarea {
+    border: solid 1.5px #9e9e9e;
+    border-radius: 1rem;
+
+}
+
+.input:hover,
+textarea:hover {
+    border: 1.5px solid yellow;
+
+}
+
+#nome {
+    left: 15px;
+
+}
+
+input:focus,
+input:valid,
+textarea {
+    border: 1.5px solid #9e9e9e;
+}
+
+
+#botton {
+    margin-top: 10%;
+    display: inline;
+    background-color: blue;
+    color: gold;
+    border: 1px solid yellow;
+    border-radius: 1rem;
+    width: 20%;
+    padding: 5px;
+    font-size: 1.2em;
+}
+
+#botton:hover {
+    background-color: gold;
+    color: rgba(97, 97, 97, 1);
+}
+
+.errore {
+    color: red;
+}
+
+
+//footer
+
+footer {
+    margin-top: 10%;
+    overflow: hidden;
+    color: yellow;
+    background-color: #525252;
+    height: 5%;
+}
+
+footer ul {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+}
+
+footer li {
+    flex-grow: 1;
+    list-style: none;
+    padding-top: 8px;
+    margin: 0;
+    color: yellow;
+    justify-content: space-between;
+
+
+}
+
+footer li a {
+
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.0em;
+    color: yellow;
+
+}
+
+footer a:hover {
+    background-color: yellow;
+    color: #333;
+}
+
+footer li a:hover {
+    background-color: yellow;
+    color: #333;
+}
+
+footer li img {
+    width: 20px;
+    display: flex;
+
+}
+
+
+
+
+
+//Responsive
+@media screen and (max-width: 600px) {
+
+    .topnav ul,
+    .Presentazione,
+    .Percorso,
+    .bobba,
+    .Design,
+    .Photoshop,
+    .Developer,
+    footer ul,
+    .offresigenerale ul,
+    .input-group {
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    img {
+        justify-content: center;
+    }
+
+    h3,
+    h1,
+    p {
+        text-align: center;
+    }
+
+
+
+    .Portfolio {
+        margin-top: 50%;
+        margin-bottom: 10%;
+video{
+    width: 30%;
+}
+   
+    }
+
+    footer {
+        margin-top: 20%;
+        text-align: center;
+        justify-content: center;
+
+        img {
+            margin-left: 48%;
+            margin-right: 48%;
+        }
+    }
+    #form01{
+        margin-top: 30%;
+    }
+    .input-group,
+    .input-group2{
+        display: flex;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .topnav ul,
+    .Presentazione,
+    .Percorso,
+    .bobba,
+    .Design,
+    .Photoshop,
+    .Developer,
+    footer ul,
+    .offresigenerale ul {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 10%;
+        padding: 0;
+
+    }
+
+    img {
+        justify-content: center;
+    }
+
+    h3,
+    h1,
+    p {
+        text-align: center;
+    }
+
+    .Portfolio {
+        margin-top: 50%;
+        margin-bottom: 10%;
+        video{
+            width: 30%;
+            
+        }
+    
+    }
+
+    footer {
+        margin-top: 20%;
+        text-align: center;
+        justify-content: center;
+
+        img {
+            margin-left: 48%;
+            margin-right: 48%;
+        }
+    }
+
+    #form01{
+        margin-top: 30%;
+    }
+   .input-group,
+   .input-group2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+   }
+}
+
+@media screen and (max-width: 992px) {
+
+    .topnav ul,
+    .Presentazione,
+    .Percorso,
+    .bobba,
+    .Design,
+    .Photoshop,
+    .Developer,
+    footer ul,
+    .offresigenerale ul {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 10%;
+        padding: 0;
+
+    }
+
+    img {
+        justify-content: center;
+    }
+
+    h3,
+    h1,
+    p {
+        text-align: center;
+    }
+
+    .Portfolio {
+        margin-top: 50%;
+        margin-bottom: 10%;
+
+        video{
+            margin-left: 5%;
+            width: 50%;
+        }
+    }
+
+    footer {
+        margin-top: 20%;
+        text-align: center;
+        justify-content: center;
+
+        img {
+            margin-left: 48%;
+            margin-right: 48%;
+        }
+    }
+
+    #form01{
+        margin-top: 30%;
+    }
+   .input-group,
+   .input-group2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+   }
+}
+
+
+//risposta
+.risposta {
+    margin-top: 10%;
+    text-align: center;
+    margin-bottom: 3%;
+}
